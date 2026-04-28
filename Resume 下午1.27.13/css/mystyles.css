@@ -1,0 +1,103 @@
+.bg-primary{
+     background-color: #BACBD9!important;
+     background-image: url("../assets/img/argyle.png");
+}
+
+.social-icons .social-icon:hover{
+     background-color: #94A695!important;
+}
+
+.text-primary {
+    color: #525759!important;
+}
+
+a{
+    color: #525759;
+}
+.container-fluid{
+    background-image: url("../assets/img/dust.png");
+    background-color: #DFEBF2;
+}
+
+/* 1. 建立網格容器，一行兩個 */
+.interests-grid {
+    display: flex;
+    flex-wrap: wrap; /* 允許換行 */
+    gap: 20px; /* 圖片之間的間距 */
+    justify-content: space-between;
+}
+
+/* 2. 設定每個項目的寬度 */
+.interest-item {
+    /* calc((100% - 間距) / 2) = 一行兩個 */
+    flex: 0 0 calc(50% - 10px); 
+    box-sizing: border-box;
+    margin-bottom: 30px; /* 下方與下一行項目的間距 */
+    text-align: center; /* 文字置中 */
+}
+
+
+
+.small-img {
+    width: 300px;
+    height: auto;
+}
+
+small-img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color:#94A695; /* 改顏色 */
+    border-color: #94A695;
+}
+
+.btn-primary:hover {
+    background-color: #94A695;
+    border-color: #94A695;
+}
+
+/* 橫向滑動容器 */
+.interest-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+/* 卡片 */
+.interest-card {
+    min-width: 250px;
+    flex: 0 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+/* 圖片 */
+.interest-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 文字 */
+.interest-card p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.card {
+    height: 40em;
+}
